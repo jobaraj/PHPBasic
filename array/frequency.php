@@ -10,7 +10,7 @@
 		<?php
 			
 			
-			$array = array("Hello");
+			$array = array('Hello');
  			for($i=0; $i< sizeof($array); $i++){
 				if($array[$i] > $max){
 					$max = $array[$i];

@@ -4,7 +4,7 @@
 
 	<body>
 		<head>
-			<title>The index of even number</title>
+			<title>The intersect</title>
 		</head>
 		
 		<?php

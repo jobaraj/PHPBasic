@@ -51,6 +51,7 @@ include_once "dbconnect.php";
 					<th>Father's Name</th>
 					<th>Mother Name</th>
 					<th>Address</th>
+					<th>Action</th>
 				
 				</tr>
 			</thead>
@@ -72,6 +73,9 @@ include_once "dbconnect.php";
 					<td><?php echo $row->fathers_name;?></td>
 					<td><?php echo $row->mothers_name;?></td>
 					<td><?php echo $row->district;?></td>
+					<td>
+						<a href="input.php?id=<?php echo $row->roll_no;?>">Edit</a>
+					</td>
 				
 				</tr>
 				<?php } ?> 

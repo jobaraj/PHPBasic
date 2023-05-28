@@ -114,30 +114,34 @@ $msg = "";
 		
 		<div>
 		<h2 style="text-align:center">Please Insert Your Information</h2>
+		<span><?php echo $msg;?></span>
+		<?php if(isset($_GET['id'])){?>
+		<a href="view.php">Go Back</a>
+		<?php } ?>
 		<form action="" method="post">
 			
 			<label for="">Student Name:</label>
-			<input type="text" name="name" value="<?php echo $row->name;?>">
+			<input type="text" name="name" value="<?php echo $row->name ?? '';?>">
 			<label for="">Roll No:</label>
-			<input type="text" name="roll_no" value="<?php echo $row->roll_no;?>">
+			<input type="text" name="roll_no" value="<?php echo $row->roll_no ?? '';?>">
 			<label for="">Department:</label>
-			<input type="text" name="department" value="<?php echo $row->department;?>">
+			<input type="text" name="department" value="<?php echo $row->department ?? '';?>">
 			<label for="">Father's Name:</label>
-			<input type="text" name="fathers_name" value="<?php echo $row->fathers_name;?>">
+			<input type="text" name="fathers_name" value="<?php echo $row->fathers_name ?? '';?>">
 			<label for="">Mother's Name:</label>
-			<input type="text" name="mothers_name" value="<?php echo $row->mothers_name;?>">
+			<input type="text" name="mothers_name" value="<?php echo $row->mothers_name ?? '';?>">
 			<label for="">Results:</label>
-			<input type="text" name="gpa" value="<?php echo $row->gpa;?>">
+			<input type="text" name="gpa" value="<?php echo $row->gpa ?? '';?>">
 			<label for="">Village:</label>
-			<input type="text" name="village" value="<?php echo $row->village;?>">
+			<input type="text" name="village" value="<?php echo $row->village ?? '';?>">
 			<label for="">P.O:</label>
-			<input type="text" name="post_office" value="<?php echo $row->post_office;?>">
+			<input type="text" name="post_office" value="<?php echo $row->post_office ?? '';?>">
 			<label for="">Thana:</label>
-			<input type="text" name="thana" value="<?php echo $row->thana;?>">
+			<input type="text" name="thana" value="<?php echo $row->thana ?? '';?>">
 			<label for="">District:</label>
-			<input type="text" name="district" value="<?php echo $row->district;?>">
+			<input type="text" name="district" value="<?php echo $row->district ?? '';?>">
 			<label for="">Division:</label>
-			<input type="text" name="division" value="<?php echo $row->division;?>">
+			<input type="text" name="division" value="<?php echo $row->division ?? '';?>">
 			
 			<?php if(isset($_GET['id'])){?>
 			<input type="submit" name="update" value="Update">

@@ -75,6 +75,8 @@ include_once "dbconnect.php";
 					<td><?php echo $row->district;?></td>
 					<td>
 						<a href="input.php?id=<?php echo $row->roll_no;?>">Edit</a>
+						<a href="delete.php?id=<?php echo $row->roll_no;?>">Delete</a>
+						
 					</td>
 				
 				</tr>
